@@ -47,6 +47,7 @@ const CreateBook = () => {
         <div>
           <label>Title: </label>
           <input
+            id="title_box"
             type='text'
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -55,6 +56,7 @@ const CreateBook = () => {
         <div>
           <label>Author: </label>
           <input
+            id="author_box"
             type='text'
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
@@ -63,6 +65,7 @@ const CreateBook = () => {
         <div>
         <label>Summary: </label>
           <textarea
+            id="summary_box"
             value={summary}
             onChange={(e) => setSummary(e.target.value)}
             rows={5}
@@ -76,6 +79,7 @@ const CreateBook = () => {
         <div>
           <label>Year: </label>
           <input
+            id="year_box"
             type='number'
             value={year}
             onChange={(e) => setYear(e.target.value)}
@@ -90,7 +94,7 @@ const CreateBook = () => {
         year != ""
         ? (
         <div>
-        <button onClick={handleSaveBook}>
+        <button id="save_button" onClick={handleSaveBook}>
           Save
         </button>
         </div>

@@ -7,21 +7,6 @@ const ShowBooks = () => {
     const [books, setBooks] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    /*
-    const [randomCustomer, setRandomCustomer] = useState([]);
-
-    const handleRandom = () => {
-      console.log("hello");
-      const temp = customerAccs[Math.floor(Math.random() * customerAccs.length)];
-      console.log(
-        temp.title + " " +
-        temp.firstName + " " +
-        temp.surname + ", " + 
-        temp.mobile + ", " +
-        temp.emailAddress
-      )
-    }
-    */
 
     useEffect(() => {
         setLoading(true);
@@ -47,7 +32,7 @@ const ShowBooks = () => {
         <p>Number of Books: {books.length}</p>
       )}
         <div style={{ padding: '10px' }}>
-        <table class="table table-hover">
+        <table id="show_all_books_table" class="table table-hover">
               <thead>
                   <tr>
                     <th>Title</th>

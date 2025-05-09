@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-//8.2) import routes
+
 import {Routes, Route} from 'react-router-dom'
-//8.4) import pages
+
 import Home from './pages/Home';
 
 import CreateBook from './pages/CreateBook';
